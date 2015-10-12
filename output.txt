@@ -1,0 +1,45 @@
+test.exe
+Running main() from gtest_main.cc
+[==========] Running 7 tests from 5 test cases.
+[----------] Global test environment set-up.
+[----------] 2 tests from constructorTest
+[ RUN      ] constructorTest.argcRangeBoundaries
+test.cpp:41: Failure
+Value of: helpConstructorTest(0, arg)
+  Actual: false
+Expected: true
+[  FAILED  ] constructorTest.argcRangeBoundaries (0 ms)
+[ RUN      ] constructorTest.argvRangeBoundaries
+[       OK ] constructorTest.argvRangeBoundaries (0 ms)
+[----------] 2 tests from constructorTest (0 ms total)
+
+[----------] 1 test from arraySubscriptTest
+[ RUN      ] arraySubscriptTest.rangeBoundaries
+[       OK ] arraySubscriptTest.rangeBoundaries (16 ms)
+[----------] 1 test from arraySubscriptTest (16 ms total)
+
+[----------] 2 tests from assignmentOperator
+[ RUN      ] assignmentOperator.selfAssignment
+[       OK ] assignmentOperator.selfAssignment (0 ms)
+[ RUN      ] assignmentOperator.sense
+[       OK ] assignmentOperator.sense (0 ms)
+[----------] 2 tests from assignmentOperator (0 ms total)
+
+[----------] 1 test from countTest
+[ RUN      ] countTest.rangeBoundaries
+[       OK ] countTest.rangeBoundaries (0 ms)
+[----------] 1 test from countTest (0 ms total)
+
+[----------] 1 test from appTest
+[ RUN      ] appTest.overall
+[       OK ] appTest.overall (0 ms)
+[----------] 1 test from appTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 7 tests from 5 test cases ran. (16 ms total)
+[  PASSED  ] 6 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] constructorTest.argcRangeBoundaries
+
+ 1 FAILED TEST
+makefile:28: recipe for target 'test' failed
